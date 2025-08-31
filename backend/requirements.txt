@@ -1,0 +1,27 @@
+fastapi==0.112.0
+uvicorn[standard]==0.30.3
+python-multipart==0.0.9
+# Include email extra to ensure email-validator is installed
+pydantic[email]==2.8.2
+sqlalchemy==2.0.32
+alembic==1.13.2
+httpx==0.27.0
+python-dotenv==1.0.1
+passlib[bcrypt]==1.7.4
+PyJWT==2.9.0
+tqdm==4.66.5
+openai-whisper==20231117
+ffmpeg-python==0.2.0
+numpy==1.26.4
+reportlab==4.2.2
+langdetect==1.0.9
+celery==5.4.0
+redis==5.0.8
+aiofiles==23.2.1
+# Async SQLite driver needed for database_url sqlite+aiosqlite
+aiosqlite==0.20.0
+# whisper alias (import whisper) already satisfied by openai-whisper, kept comment for clarity
+rank-bm25==0.2.2
+faiss-cpu==1.8.0.post1; platform_system != "Windows"
+fastapi-limiter==0.1.6
+sentence-transformers==2.7.0

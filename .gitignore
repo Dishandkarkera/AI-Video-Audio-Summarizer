@@ -1,0 +1,72 @@
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg-info/
+.eggs/
+.build/
+.python-version
+
+# Virtual envs
+.env
+.env.*
+.venv/
+venv/
+ENV/
+
+# ---- Node / Frontend ----
+node_modules/
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# ---- IDE / Editor ----
+.vscode/
+*.swp
+.DS_Store
+Thumbs.db
+
+# ---- Environment & Secrets ----
+*.env
+.env.local
+frontend/.env
+backend/.env
+backend/.env.*
+# Allow example envs
+!backend/.env.example
+!backend_node/.env.example
+
+# ---- Build artifacts ----
+/dist/
+/build/
+coverage/
+report.html
+
+# ---- Storage (generated media & transcripts) ----
+# Keep index structure but ignore large/generated files
+storage/*
+!storage/.gitkeep
+backend/storage/*
+!backend/storage/.gitkeep
+uploads/*
+!uploads/.gitkeep
+
+# If you want to version example/sample small media files, move them to a samples/ dir and whitelist.
+
+# ---- OS ----
+~$*
+
+# ---- Misc ----
+*.sqlite3
+*.db
+*.db-journal
+
+# Tailwind JIT cache
+frontend/.tailwindcache/
